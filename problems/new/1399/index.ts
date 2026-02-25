@@ -1,28 +1,3 @@
-// export default function countLargestGroup(n: number): number {
-//   let obj: Record<number, number[]> = {};
-
-//   for (let i = 1; i <= n; i++) {
-//     let sum = i
-//       .toString()
-//       .split("")
-//       .map((elt) => parseInt(elt))
-//       .reduce((a, b) => a + b);
-
-//     if (obj[sum]) {
-//       obj[sum].push(1);
-//     } else {
-//       obj[sum] = [];
-//       obj[sum].push(1);
-//     }
-//   }
-
-//   const objValues = Object.values(obj);
-//   const maxLength = Math.max(...objValues.map((o) => o.length));
-//   const filteredObj = objValues.filter((o) => o.length === maxLength);
-
-//   return filteredObj.length;
-// }
-
 export default function countLargestGroup(n: number): number {
   const map: Record<number, number> = {};
   let maxSize = 0;
